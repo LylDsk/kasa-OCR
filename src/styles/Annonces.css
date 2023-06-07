@@ -1,0 +1,12 @@
+.annonces {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1240px;
+  margin: 0 auto;
+  margin-top: 43px;
+  background-color: rgba(246, 246, 246, 1);
+  border-radius: 25px;
+  justify-content: space-around;
+  padding-left: 0px;
+  padding: 20px;
+}

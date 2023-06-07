@@ -1,0 +1,11 @@
+.about-imgdiv {
+  max-width: 1240px;
+  max-height: 223px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 25px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
