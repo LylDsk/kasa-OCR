@@ -4,9 +4,11 @@ import "../styles/Card.css";
 
 const Card = ({ logements }) => {
   return (
-    <NavLink to={"/annonces/" + logements.id}>
-      <li className="card">
-        <img src={logements.cover} alt={logements.title} />
+    <NavLink className="link-card" to={"/annonces/" + logements.id}>
+      <li className="cardd">
+        <div className="card-image">
+          <img className="img" src={logements.cover} alt={logements.title} />
+        </div>
         <div className="infos">
           <h2 className="title">{logements.title}</h2>
         </div>

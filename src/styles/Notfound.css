@@ -4,6 +4,10 @@
   margin: 100px 0 0 0;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 .nftxt {
   font-size: 36px;
   font-weight: 500;
@@ -19,4 +23,29 @@
 
 body {
   color: #ff6060;
+}
+
+@media (max-width: 824px) {
+  .nflogo {
+    font-size: 96px;
+    font-weight: 700;
+    margin: 198px 0 0 0;
+  }
+
+  .nftxt {
+    font-size: 18px;
+  }
+
+  .nfredir {
+    font-size: 14px;
+  }
+
+  .nfmsg {
+    max-width: 260px;
+    margin: auto;
+  }
+
+  .nfredir {
+    text-decoration: underline;
+  }
 }

@@ -1,14 +1,12 @@
-.card {
+.cardd {
   max-width: 340px;
   max-height: 340px;
-  overflow: hidden;
-  margin: 0 auto;
-  border-radius: 25px;
-  position: relative;
+  border-radius: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 25px;
+  position: relative;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .title {
@@ -16,7 +14,7 @@
   bottom: 13px;
   left: 20px;
   width: 60%;
-  height: 100%;
+  max-width: 340px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; /* Aligner le contenu en bas */
@@ -24,9 +22,10 @@
   color: white;
   font-size: 18px;
   font-weight: 500;
+  border-radius: 10px;
 }
 
-.card::before {
+.cardd::before {
   content: "";
   position: absolute;
   top: 0;
@@ -34,4 +33,50 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75));
+}
+
+.card-image {
+  border-radius: 10px;
+  display: flex;
+  width: 100%;
+  flex-grow: 1; /* Permet à l'image de prendre toute la place disponible */
+  object-fit: cover;
+  max-width: 340px;
+  overflow: hidden;
+}
+
+.link-card {
+  border-radius: 10px;
+  cursor: pointer;
+  height: 340px;
+  max-width: 340px;
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow 0.2s ease-in-out;
+  width: 30%;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 824px) {
+  .link-card {
+    width: 100%;
+    height: 255px;
+    margin-bottom: 20px;
+    max-width: 824px;
+  }
+
+  .cardd {
+    max-height: 255px;
+    max-width: 824px;
+  }
+
+  .title {
+    bottom: 0px;
+    left: 10px;
+  }
+
+  .card-image {
+    max-width: 824px;
+    justify-content: center;
+  }
 }

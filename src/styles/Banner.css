@@ -30,3 +30,20 @@
   font-size: 24px;
   font-weight: 500;
 }
+
+@media (max-width: 824px) {
+  .kasa-logo {
+    height: 43px;
+  }
+
+  .kasa-option {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  .kasa-banner {
+    padding: 20px;
+  }
+}

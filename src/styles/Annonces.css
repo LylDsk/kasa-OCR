@@ -9,4 +9,12 @@
   justify-content: space-around;
   padding-left: 0px;
   padding: 20px;
+  padding-top: 50px;
+}
+
+@media (max-width: 824px) {
+  .annonces {
+    padding-top: 0px;
+    margin-top: 20px;
+  }
 }
