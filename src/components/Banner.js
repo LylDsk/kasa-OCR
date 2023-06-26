@@ -5,7 +5,9 @@ import "../styles/Banner.css";
 function Banner() {
   return (
     <div className="kasa-banner">
-      <img src={logo} alt="Kasa" className="kasa-logo" />
+      <NavLink to="/">
+        <img src={logo} alt="Kasa" className="kasa-logo" />
+      </NavLink>
       <div className="kasa-menu">
         <NavLink
           to="/"

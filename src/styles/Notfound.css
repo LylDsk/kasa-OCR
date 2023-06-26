@@ -25,6 +25,10 @@ body {
   color: #ff6060;
 }
 
+.homereturn {
+  color: #ff6060;
+}
+
 @media (max-width: 824px) {
   .nflogo {
     font-size: 96px;
