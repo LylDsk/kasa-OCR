@@ -50,6 +50,22 @@
   align-items: center;
 }
 
+.image-counter {
+  position: absolute;
+  top: 175px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  pointer-events: none;
+}
+
 @media (max-width: 824px) {
   .carousel {
     border-radius: 10px;
@@ -80,5 +96,9 @@
 
   .arwimg {
     height: 20px;
+  }
+
+  .image-counter {
+    color: transparent;
   }
 }
